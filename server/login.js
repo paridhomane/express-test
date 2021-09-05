@@ -44,6 +44,9 @@ app.get("/Login.html", function (request, response) {
 
 app.post("authreg", function (request, response) {
   var uname = request.body.uname;
+  var email = request.body.email;
+  var password = request.body.password;
+  var cpassword = request.body.cpassword;
 });
 
 app.post("/auth", function (request, response) {
