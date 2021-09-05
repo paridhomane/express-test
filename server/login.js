@@ -30,6 +30,12 @@ app.get("/", function (request, response) {
   response.sendFile(path.join(__dirname, "../client/Screens", "Login.html"));
 });
 
+app.get("/Register.html", function (request, response) {
+  // response.sendFile(path.join('../client/Screens/Login.html'));
+
+  response.sendFile(path.join(__dirname, "../client/Screens", "Register.html"));
+});
+
 app.post("/auth", function (request, response) {
   var email = request.body.email;
   var password = request.body.password;
