@@ -36,6 +36,16 @@ app.get("/Register.html", function (request, response) {
   response.sendFile(path.join(__dirname, "../client/Screens", "Register.html"));
 });
 
+app.get("/Login.html", function (request, response) {
+  // response.sendFile(path.join('../client/Screens/Login.html'));
+
+  response.sendFile(path.join(__dirname, "../client/Screens", "Login.html"));
+});
+
+app.post("authreg", function (request, response) {
+  var uname = request.body.uname;
+});
+
 app.post("/auth", function (request, response) {
   var email = request.body.email;
   var password = request.body.password;
