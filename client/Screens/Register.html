@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Register</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/Login.css" />
-    <title>Login</title>
+
     <body>
       <ul>
         <li><a class="active" href="../Screens/Login.html">Login</a></li>
@@ -13,8 +14,15 @@
         <div class="container-fluid">
           <div class="row">
             <div class="colLeft">
-              <h3 class="login">Login</h3>
+              <h3 class="login">Register</h3>
               <form class="form" action="auth" method="POST">
+                <input
+                  type="text"
+                  name="uname"
+                  placeholder="Enter name"
+                  class="inputEmail"
+                  required
+                /><br />
                 <input
                   type="email"
                   name="email"
@@ -29,10 +37,17 @@
                   class="inputPassword"
                   required
                 /><br />
+                <input
+                  type="password"
+                  name="cpassword"
+                  placeholder="Re-enter password"
+                  class="inputPassword"
+                  required
+                /><br />
                 <button class="button" type="submit">Log in</button>
                 <h6 class="Signup">
-                  Don't have an account?<span
-                    ><a href="/Register.html"> Sign up</a></span
+                  Already have an account?<span
+                    ><a href="./Login.html"> Sign In</a></span
                   >
                 </h6>
               </form>
